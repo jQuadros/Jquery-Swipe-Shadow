@@ -14,8 +14,8 @@ jQuery.fn.onSwipe = function(toLeft, toRight){
 	this.each(function(){
 		jqElem = $(this);
 
-		jqElem.prepend('<div id="div-next" class="div-shadow" style="height: 1000%; width: 30px; z-index: 10; position: absolute; right: 0px; text-align: center; display: block; visibility: hidden; border-radius: 99px 0px 0px 99px; background:rgba(0,0,0,0.1);"></div>');
-		jqElem.prepend('<div id="div-prev" class="div-shadow" style="height: 1000%; width: 30px; z-index: 10; position: absolute; left: 0px;  text-align: center; display: block; visibility: hidden; border-radius: 0px 99px 99px 0px; background:rgba(0,0,0,0.1);"></div>');
+		jqElem.prepend('<div id="div-next" class="div-shadow" style="height: 100%; width: 30px; z-index: 10; position: absolute; right: 0px; text-align: center; display: block; visibility: hidden; border-radius: 99px 0px 0px 99px; background:rgba(0,0,0,0.1);"></div>');
+		jqElem.prepend('<div id="div-prev" class="div-shadow" style="height: 100%; width: 30px; z-index: 10; position: absolute; left: 0px;  text-align: center; display: block; visibility: hidden; border-radius: 0px 99px 99px 0px; background:rgba(0,0,0,0.1);"></div>');
 
 		jqElem.on('touchstart', handleTouchStart);
 		jqElem.on('touchend', handleTouchEnd);
